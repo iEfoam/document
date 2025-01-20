@@ -23,11 +23,14 @@
 
     ![1737387612940](https://github.com/user-attachments/assets/2cdad0ae-1aeb-451b-a456-e4b194a8738a)
     ![1737387656688](https://github.com/user-attachments/assets/ab5b9af3-cbf0-42a1-916f-2692b904a9f1)
-    点击配置文件
+    
+    `点击配置文件`
+    
     ![1737387695579](https://github.com/user-attachments/assets/7b85c136-cac8-4dd4-b9bb-e5b4982adc07)
 
     
   - 最后，滑动`Slide to Connect`按钮，链接，就可以了。如图所示效果：
+    
     ![1737387777469](https://github.com/user-attachments/assets/49761e84-385e-4c1d-ab23-a208d79805d8)
 
 * Android
