@@ -1,6 +1,38 @@
 #### Chill Pro Bridging network description
 
 * Windows
+  - 安装运行环境依赖 golang，下载地址：[golang](https://dl.google.com/go/go1.23.4.windows-amd64.msi) 点击自动下载`默认安装即可，一直Next`
+  - 下载`3x-ui` 下载地址：[3x-ui](https://github.com/MHSanaei/3x-ui/releases/download/v2.4.11/x-ui-windows-amd64.zip) 点击自动下载,解压到任意目录
+  - 解压后进入文件夹，点击`main.exe`执行。
+  - 在任意浏览器打开网址：[http://localhost:2053/](http://localhost:2053/), 可以看见如下界面
+
+    ![image](https://github.com/user-attachments/assets/f581027f-b21b-4509-b864-9cfcfb9cb985)
+
+  - 输入账号`admin` 密码`admin` 点击登录。进入如下界面：
+ 
+    ![image](https://github.com/user-attachments/assets/4497640e-1eb5-40cb-9e0e-a9203b6d9d85)
+
+  - 点击左侧菜单`xray设置` 选项进入`出站规则`->`添加出站`->选择`json`，输入`windows的链接地址`到输入框，然后点击旁边的图标按钮->`添加出站`。
+
+    ![image](https://github.com/user-attachments/assets/c7a8aef9-32cf-4c38-95fc-625104516131)
+    ![image](https://github.com/user-attachments/assets/d40552a4-a0a3-4026-8ad1-97241ec99956)
+    ![image](https://github.com/user-attachments/assets/9b8c0b26-f91b-444c-a69b-f3846a848049)
+    ![image](https://github.com/user-attachments/assets/94e280aa-2147-4f75-84a0-2f9caea071b9)
+ 
+  - 最终效果
+    
+    ![image](https://github.com/user-attachments/assets/de5ea163-2c07-4b0a-85b2-7adb8dfa6321)
+
+  - 然后点击顶部的`保存`按钮，然后点击`重新启动xray`按钮, 如果出现重启错误
+
+    ![image](https://github.com/user-attachments/assets/cec790c7-9321-4a4c-9ebf-d02f86946cc4)
+  - 进入`高级配置`->修改下列端口为`8080` 如图所示
+    ![image](https://github.com/user-attachments/assets/1a79763a-bc3b-4079-bf99-5e7605c52087)
+  - 然后点击`保存`按钮->点击`重新启动xray`按钮。
+  - 完成windows的配置。
+
+
+
 
 * Ios
   - 从apple store 下载 V2Box - V2ray Client App，安装后打开.
