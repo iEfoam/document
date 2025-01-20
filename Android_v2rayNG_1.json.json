@@ -1,0 +1,95 @@
+{
+  "inbounds": [
+    {
+      "tag": "api",
+      "listen": "127.0.0.1",
+      "port": 6666,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      }
+    },
+    {
+      "tag": "blocked",
+      "protocol": "blackhole",
+      "settings": {}
+    },
+    {
+      "tag": "reverse-proxy",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "proxy.au.iefoam.com",
+            "port": 12132,
+            "password": "kY6MHVwxSsyWco6Na4LrhTmF772ur/5Bvqt0M2k1pBw=",
+            "method": "aes-128-gcm",
+            "uot": true
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "outboundTag": "blocked",
+        "ip": [
+          "geoip:private"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ]
+      },
+      {
+        "outboundTag": "reverse-proxy",
+        "inboundTag": [
+          "reverse-1"
+        ],
+        "domain": [
+          "full:reverse.xui1"
+        ],
+        "type": "field"
+      },
+      {
+        "outboundTag": "direct",
+        "inboundTag": [
+          "reverse-1"
+        ],
+        "type": "field"
+      }
+    ]
+  },
+  "reverse": {
+    "bridges": [
+      {
+        "tag": "reverse-1",
+        "domain": "reverse.xui1"
+      }
+    ]
+  }
+}
