@@ -17,10 +17,9 @@
     ![image](https://github.com/user-attachments/assets/c7a8aef9-32cf-4c38-95fc-625104516131)
     ![image](https://github.com/user-attachments/assets/d40552a4-a0a3-4026-8ad1-97241ec99956)
     ![image](https://github.com/user-attachments/assets/9b8c0b26-f91b-444c-a69b-f3846a848049)
+  - 然后进入`反向`->`添加反向`
     ![image](https://github.com/user-attachments/assets/94e280aa-2147-4f75-84a0-2f9caea071b9)
- 
-  - 最终效果
-    
+  - 最终完成效果
     ![image](https://github.com/user-attachments/assets/de5ea163-2c07-4b0a-85b2-7adb8dfa6321)
 
   - 然后点击顶部的`保存`按钮，然后点击`重新启动xray`按钮, 如果出现重启错误
